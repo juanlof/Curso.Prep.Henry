@@ -147,29 +147,50 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero === 0 || numero === 1) return false
-  for (i=2;i<=numero;i++){
-      if(numero % i===1) return false
-      return false
-  } 
+  cont=0;
+  for (i=2; i<numero; i++){
+      if(numero % i===0) 
+      cont++;
+         if (cont==0) {return true}
+  }
+      return false;
+  
 }
+
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  if (valor === true) return "Soy verdadero"
+  if (valor === false) return "Soy falso"
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
+  //Escribe tu código aquí  
+  const array = [0,1,2,3,4,5,6,7,8,9,10];
+  array [0] = 0*6;
+  array [1] = 1*6;
+  array [2] = 2*6;
+  array [3] = 3*6;
+  array [4] = 4*6;
+  array [5] = 5*6;
+  array [6] = 6*6;
+  array [7] = 7*6;
+  array [8] = 8*6;
+  array [9] = 9*6;
+  array [10] = 10*6;
+  return array;
   
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  if (numero<1000 && numero>99){return true}
+  return false
   
 }
 
@@ -177,6 +198,14 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var x = 1
+  do{
+    numero= numero+5;
+    x++;
+    }while (x<=8);
+    return numero
+
+
 }
 
 
