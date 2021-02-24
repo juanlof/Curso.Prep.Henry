@@ -30,6 +30,7 @@ function incrementarPorUno(array) {
       array[i]=array[i]+1; {
         return array;
       }
+      //array[i] +=1 (visto en clase)
     }
 
 
@@ -82,8 +83,7 @@ function agregarNumeros(numeros) {
       for (let i=0; i<numeros.length; i++)
          if (numeros[i]>0){
           suma = suma += numeros[i]}
-        
-       
+               
        {return suma}
 }
 
@@ -119,7 +119,7 @@ function multiplicarArgumentos() {
   if (arguments.length < 1) {return 0}
   var M = 1
   for (i=0; i<arguments.length;i++)
-  M= M * arguments[i];
+  M = M * arguments[i];
 {return M}  
 }
 
@@ -195,9 +195,9 @@ function mayorACien(array) {
   // Tu código:
   var cien=[]
   for (i=0; i<array.length; i++)
-  if (array[i]>100)
-  cien.push(array[i])
-    return cien;
+    if (array[i]>100)
+      cien.push(array[i])
+   return cien;
   
 }
 
@@ -219,10 +219,7 @@ function breakStatement(numero) {
     }
        return array;
 
- 
-}
-
-
+ }
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
